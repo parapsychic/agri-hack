@@ -2,7 +2,7 @@ import 'package:agri_hack/API_KEY.dart';
 import 'package:agri_hack/models/measures.dart';
 import 'package:dio/dio.dart';
 
-class RESTServices {
+class BlynkServices {
   static const API_URL = "https://blynk.cloud/external/api/get?token=";
 
   static Future<ServerReturns> getValues() async {
