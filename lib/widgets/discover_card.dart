@@ -11,6 +11,7 @@ class DiscoverCard extends StatelessWidget {
   final Color? gradientStartColor;
   final Color? gradientEndColor;
   final double? height;
+  final double? fontsize;
   final double? width;
   final Widget? vectorBottom;
   final Widget? vectorTop;
@@ -23,6 +24,7 @@ class DiscoverCard extends StatelessWidget {
       this.gradientStartColor,
       this.gradientEndColor,
       this.height,
+      this.fontsize,
       this.width,
       this.vectorBottom,
       this.vectorTop,
@@ -81,7 +83,7 @@ class DiscoverCard extends StatelessWidget {
                         child: Text(
                           title!,
                           style: TextStyle(
-                              fontSize: 30.w,
+                              fontSize: fontsize ?? 30.w,
                               fontWeight: FontWeight.bold,
                               color: Colors.white),
                         ),

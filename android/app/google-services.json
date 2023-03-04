@@ -14,6 +14,14 @@
       },
       "oauth_client": [
         {
+          "client_id": "255500404036-hbckb35n35tcdc9urfqen4f127u272bk.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.agri_hack",
+            "certificate_hash": "e200dd2f088fe2591ac96f82c158f0bd528efbc3"
+          }
+        },
+        {
           "client_id": "255500404036-7ni1l952rlpl3uffbev1230fgh4sqsci.apps.googleusercontent.com",
           "client_type": 3
         }

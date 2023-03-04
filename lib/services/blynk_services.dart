@@ -15,9 +15,8 @@ class BlynkServices {
     // And show a snackbar using the status
     try {
       // pull stuff using dio
-      // TODO iterate till <=3, ie 4
-      final _list = [0.0, 0.0, 0.0, 0.0];
-      for (int pin = 0; pin < 3; pin++) {
+      final _list = [0.0, 0.0, 0.0, 0.0, 0.0, 0.0];
+      for (int pin = 0; pin < 6; pin++) {
         final response = await Dio().get("$API_URL$API_TOKEN&v$pin");
         print("DATA : ${response.data}");
         double val = response.data.toDouble();
@@ -26,12 +25,12 @@ class BlynkServices {
       // TODO name this according to pin, or do a map in constants
       // TODO i have doubts with NPK, so I'm going to give garbage
       _measures = Measures(
-        n: _list[0],
-        p: 0.0,
-        k: 0.0,
+        n: _list[3],
+        p: _list[4],
+        k: _list[5],
         moisture: _list[1],
         temperature: _list[2],
-        pH: _list[3],
+        pH: _list[0],
       );
       status = StatusCode.SUCCESS;
       print("SUCCESS");
